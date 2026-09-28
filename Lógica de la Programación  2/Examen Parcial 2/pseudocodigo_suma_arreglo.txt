@@ -1,0 +1,33 @@
+Funcion Solicitar_Num(arreglo)
+
+    Para i <- 0 Hasta Longitud(arreglo) - 1 Hacer
+        Escribir "Ingrese un número:"
+        Leer arreglo[i]
+    FinPara
+
+    Retornar arreglo
+
+FinFuncion
+
+
+Funcion Sumar(arreglo)
+
+    suma <- 0
+
+    Para i <- 0 Hasta Longitud(arreglo) - 1 Hacer
+        suma <- suma + arreglo[i]
+    FinPara
+
+    Retornar suma
+
+FinFuncion
+
+
+Dimension arreglo1[10]
+
+Solicitar_Num(arreglo1)
+
+suma <- Sumar(arreglo1)
+
+Escribir "Resultado de suma de los números ingresados: ", suma
+Escribir arreglo1
